@@ -195,4 +195,30 @@ return [
 
 	],
 
+    /**
+     * Password strength regular expression
+     *
+     * ^               Start anchor
+     * (?=.*[A-Z])     Ensure string has at least one uppercase letter
+     * (?=.*[!@#$&*])  Ensure string has one special case letter
+     * (?=.*[0-9])     Ensure string has at least 1 digit
+     * (?=.*[a-z])     Ensure string has three lowercase letters
+     * .{8}.*            Ensure string is of length 8
+     * $               End anchor
+     */
+    'pwRegex'       => '/^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8}.*$/',
+    'minUserLength' => 6,
+
+    'keywords'    => '',
+    'description' => '',
+    'siteURL'     => 'http://com.jasonturpin.com',
+    'siteName'    => 'Com.JasonTurpin.com',
+    'titleTag'    => '',
+
+    // Set Salts
+    'pwSalt'    => 'bc8b903000a1244efa2f7e',
+    'loginSalt' => 'c0684b875df67bdaa9ba02',
+
+    // Admin theme locations
+    'adminThemeLoc' => '/theme/admin'
 ];

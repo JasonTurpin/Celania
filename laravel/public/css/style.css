@@ -1,0 +1,19 @@
+.pwStrength li {
+    list-style-type: disc;
+}
+.pwStrength {
+    padding-left: 10px;
+}
+.logo {
+    margin-top: 0 !important;
+}
+.errorLogoContainer {
+    margin-bottom: 25px;
+}
+.errorPageBG {
+    background: none repeat scroll 0 0 #5c5c5c;
+    color: #fff;
+}
+.errorPageMsg {
+    color: #4448a6;
+}
