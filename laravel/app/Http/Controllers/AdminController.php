@@ -31,7 +31,6 @@ class AdminController extends BaseController {
         // Run parent constructor
         parent::__construct();
 
-        /*
         // Ensure user is logged in
         $this->beforeFilter(function() {
             // IF the user is requesting the sign in screen
@@ -43,11 +42,10 @@ class AdminController extends BaseController {
                 return redirect()->route('admin.signin');
 
             // IF the user does not have access to the current role
-            } elseif (!$this->user->roleTest('Super Admin')) {
+            } elseif (!$this->user->roleTest('Admin')) {
                 return redirect()->route('404');
             }
         });
-        */
 
         // Add stylesheets to load
         $this->stylesheets[] = $this->adminThemeLoc.'/css/bootstrap.min.css';
